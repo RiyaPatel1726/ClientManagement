@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CRUD Appliation </title>
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="container">
+  <div class="tile job">
+    <div class="header">
+      <div class="count" id="numClient">1</div>
+      <div class="title">Jobs</div>
+    </div>
+    <div class="body">
+      <div class="title">Number of Clients</div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-left:300px;">
+<button style="visibility:hidden" id="viewClient"></button>
+<button class="bigB" id="addClient" onClick="doRedirect();">Add Clients</button>
+</div>
+<div style="margin-top:200px;">
+<form name="clientmanage">
+	<table>
+		<thead>
+
+			</thead>
+			<tbody></tbody>
+	</table>
+</form>
+</div>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="jquery.js"></script>
+<script src="scripts.js"></script>
+<script type='text/javascript'>
+function doRedirect(){
+	window.location.assign("add.html");
+}
+</script>
+</body>
+</html>

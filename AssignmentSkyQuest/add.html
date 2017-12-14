@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Add Client</title>
+
+ <link rel="stylesheet" href="style.css">
+	<style>
+	input{
+		height:30px;
+		width:400px;
+		border-radius: 5px;
+		margin-bottom: 10px;
+	}
+	body{
+		color:black;
+		font-family: 'Open Sans', sans-serif;
+		font-size:17px;
+	}
+	form{
+		width:700px;
+		margin:0px auto;
+	}
+	</style>
+</head>
+<body>
+	<form id="add-form">
+		First Name :<br>
+		<input type="text" id="fname" required><br>
+		Last Name :<br>
+		<input type="text" id="lname" required><br>
+		Email ID :<br>
+		<input type="email" id="email" required><br>
+		Phone Number :<br>
+		<input type="Number" id="phno" required><br>
+		Business Name :<br>
+		<input type="text" id="bname" required><br>
+		Bank Account Number :<br>
+		<input type="number" id="bnum" required><br>
+		Address<br>
+		Street 1 :<br>
+		<input type="text" id="street1" required><br>
+		Street 2 :<br>
+		<input type="text" id="street2" required><br>
+		City :<br>
+		<input type="text" id="city" required><br>
+		State :<br>
+		<input type="text" id="state" required><br>
+		Country :<br>
+		<input type="text" id="country" required><br>
+		Pinclode :<br>
+		<input type="number" id="pincode" required><br>
+		<button class="bigB" type="submit" id="submit" onClick="doRedirect();">Submit</button>
+	</form>
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+  <script src="jquery.js"></script>
+  <script src="scripts.js"></script>
+	<script type='text/javascript'>
+	function doRedirect(){
+		window.location.assign("index.html");
+	}
+	</script>
+
+</body>
+</html>
